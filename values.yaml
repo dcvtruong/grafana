@@ -136,8 +136,8 @@ adminPassword: admin12345
 # Use an existing secret for the admin user.
 admin:
   existingSecret: ""
-  userKey: admin-user
-  passwordKey: admin-password
+  userKey: admin
+  passwordKey: admin12345
 
 ## Use an alternate scheduler, e.g. "stork".
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
@@ -182,7 +182,7 @@ datasources:
     datasources:
     - name: Prometheus
       type: prometheus
-      url: http://prometheus-server.monitoring:80
+      url: http://prometheus-server.monitoring:9090
       access: proxy
       isDefault: true
 
